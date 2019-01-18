@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>GOT</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+	<title>DATA GOT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Compiled and minified CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  
-  <script src="./assets/data/data.js"></script>
-  <script src="./assets/data/episodes.js"></script>
-  <script src="./assets/js/app.js"></script>
-  <script src="./assets/js/main.js"></script>
-</body>
-</html>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<img src ="assets/img/GOT1.jpg" class="img-fluid" alt="GOT1">
+					<h1 class="yellow-text text-darken-2">Conoce más de GOT</h1>
+				</div>
+			</div>
+			<div class="row" id="group">
+				<div class="col s9 15 offset-s2 offset-l1">
+					<form name="SeasonNUm" class="input-field" autocomplete="off">
+						<!--<button onclick="cargarListado();" value="Cargar Listado"></button>-->
+						<select id="type" class="select">
+							<option value="0" selected="selected">Temporadas</option>
+							<option value="One">1</option>
+							<option value="Two">2</option>
+							<option value="Tree">3</option>
+							<option value="Four">4</option>
+							<option value="Five">5</option>
+							<option value="Six">6</option>
+							<option value="Seven">7</option>
+							<option value="Eigth">8</option>
+
+						</select>
+					</form>
+				</div>
+			</div>
+
+			<footer>
+				<div class="container" style="width: 100%">
+					© 2019
+					<a class="grey-text text-lighten-4" href="http://viewers-guide.hbo.com/">Game of Thrones Viewer's Guide</a>
+				</div>
+			</footer>
+
+
+			<!-- enlaces de scripts-->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>				
+			<script src="./assets/data/data.js"></script>
+			<script src="./assets/data/episodes.js"></script>
+			<script src="./assets/js/app.js"></script>
+			<script src="./assets/js/main.js"></script>
+
+
+		</body>
+		</html>
