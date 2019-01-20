@@ -28,6 +28,19 @@ header{
     display: block;
 }
 
+.card{
+    width: 33%;
+    margin: 1em;
+    text-align: center;
+}
+ .box{
+
+ }
+
+ .img{
+
+ }
+
 footer{
         height: 70px;
         background-color: #363636;
