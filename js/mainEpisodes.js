@@ -1,6 +1,6 @@
 const dataEpisodes = (EPISODES.episodes);
 
-const containerEpisodes = document.getElementById("rootEpisodes");
+const containerEpisodes = document.getElementById("root2");
 
 
 
@@ -8,28 +8,32 @@ const containerEpisodes = document.getElementById("rootEpisodes");
     //console.log(data);
 
     document.getElementById("seasons").addEventListener("click",()=>{
-     document.getElementById("rootEpisodes").style.display="block";
+     document.getElementById("root2").style.display="block";
    })
 
 
     const showEpisodes = (dataEpisodes) => {
-      let result = "";
+      let result2 = "";
 
     //let arrEpisodes = [];
 
     dataEpisodes.forEach(element => {
-      result = containerEpisodes.innerHTML += `
-      <div class = "cardEpisodes" >
-      <div class = "card-body">
-      <span>Título: <h5> "${element.episodeTitle}" </h5></span><br>
-      <p class = "card-number">N° Capítulo: ${element.episodeNum}   
-      -  N° Temporada:  ${element.seasonNum} </p><br>
-      <p class = "card-text"><b> Descripción: </b> ${element.episodeDescription} </p>  
-      </div>    
-      </div>
-      `
+      if (element.seasonNum !=="") {
+        result = containerEpisodes.innerHTML += `
+        <div>
+        <div class = "card">
+        <div class = "box">
+        <div class = "img">
+        <h2>${element.episodeTitle}</h2>
+        </div>
+        <p>${element.episodeDescription}</p>
+        <h3>${element.seasonNum}</h3>
+        </div>
+        </div>    
+        </div>`
+      }
     });
-    return result;
+    return result2;
   }
 
   window.onload = showEpisodes(dataEpisodes);
