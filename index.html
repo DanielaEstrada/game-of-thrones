@@ -15,63 +15,24 @@
 </head>
 <body>
 	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col s12">
-					<img src ="assets/img/GOT1.jpg" class="img-fluid" alt="GOT1">
-					<h1 class="yellow-text text-darken-2">Conoce más de GOT</h1>
+		<img src ="assets/img/GOT1.jpg" class="img-fluid" alt="GOT1">
+			<nav>
+				<div class="nav-wrapper">
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html">Personajes</a></li>
+						<li><a href="indexEpisodes.html">Capítulos</a></li>
+					</ul>
 				</div>
-			</div>
-			<!--<li class="item">
-				<a class="link" href="indexEpisodes.html" >Capítulos de GOT</a>
-			</li>-->
-			<!--Sección donde filtro por capítulos-->
-			<div class="row" id="group">
-				<div class="col s9 15 offset-s2 offset-l1">
-					<form name="formCharacter" class="input-field" autocomplete="off">
-
-						<!-- Select con opciones que se manejarán desde el DOM -->
-						<select id="houseName" class="select">
-							<option value="0" selected="selected">Seleccionar casa</option>
-							<option value="Greyjoy">Greyjoy</option>
-							<option value="Targaryen">Targaryen</option>
-							<option value="Lannister">Lannister</option>
-							<option value="Stark">Stark</option>
-							<option value="Tully">Tully</option>
-							<option value="Martell">Martell</option>
-							<option value="Mormont">Momont</option>
-							<option value="Baratheon">Baratheon</option>
-							<option value="Tyrell">Tyrell</option>
-							<option value="Frey">Frey</option>
-							<option value="Arryn">Arryn</option>
-							<option value="Bolton">Bolton</option>
-							<option value="Tarly">Tarly</option>
-
-						</select>
-					</form>
-
-					<!--<button onclick="cargarListado();" value="Cargar Listado"></button>-->
-					<select id="chapterList" class="select">
-						<option value="0" selected="selected">Seleccionar capítulo</option>
-						<option value="One">Temporada 1 - </option>
-						<option value="Two">Temporada 2 - </option>
-						<option value="Tree">Temporada 3 - </option>
-						<option value="Four">Temporada 4 - </option>
-						<option value="Five">Temporada 5 - </option>
-						<option value="Six">Temporada 6 - </option>
-						<option value="Seven">Temporada 7 - </option>
-						<option value="Eigth">Temporada 8 - </option>
-
-					</select>
-				</form>
-			</div>
-		</div>
+			</nav>					
 	</header>
 
 
 	<!--Contenedor con la info de la data-->
-	<section id="root" class="row"></section>
-	<section id="root2" class="row"></section>
+	<article class="col s12 m4 l12">
+		<h2 class="animated bounceInRight">PERSONAJES</h2>
+		<section id="root" class="container-fluid"></section>
+	</article>
+	<!--<section id="root2" class="row"></section>-->
 
 
 	<footer>
@@ -88,7 +49,6 @@
 	<script src="./assets/data/episodes.js"></script>
 	<script src="./assets/js/app.js"></script>
 	<script src="./assets/js/main.js"></script>
-	<script src="./assets/js/mainEpisodes.js"></script>
 
 
 </body>
