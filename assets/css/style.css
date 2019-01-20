@@ -1,6 +1,6 @@
 body{
-    color: #232323;
-    font-family: 'Cinzel Decorative', sans-serif;
+    color: #383838;
+    font-family: 'Lato', sans-serif;
 }
 
 header{
@@ -12,16 +12,9 @@ header{
     background-position: center;
     text-align: center;
     color: #232323;
+    font-family: 'Cinzel Decorative', sans-serif;
     padding: 4% 0 0 0;
     background-repeat: no-repeat;
-}
-
-#group{
-    margin-top: 10%;
-    background: #5A5A5A;
-    border-radius: 5rem 5rem 0px 0px;
-    width: 50%;
-    margin-bottom: 0;
 }
 
 .select{
@@ -32,6 +25,7 @@ header{
     width: 33%;
     margin: 1em;
     text-align: center;
+    font-size: xx-small;
 }
  .box{
 

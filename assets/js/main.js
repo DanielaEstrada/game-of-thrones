@@ -1,26 +1,12 @@
-/*//DOM
-const data = window.EPISODES.episodes;
-
-
-
-//Inicialización de elementos de Materialize
-document.addEventListener('DOMContentLoaded', function () {
-  window.M.AutoInit();
-});
-
-//Imprime tarjetas de todos los personajes al cargar la página
-window.onload = function () {
- */
- const containerRoot = document.getElementById("root");
-
+//DOM
 const data = (DATA.characters);
+const containerRoot = document.getElementById("root");
 
-
-const showData = (data) =>{
+  const showData = (data) =>{
     let result = "";
 
-   data.forEach(element => {
-
+    data.forEach(element => {
+      if (element.characterName !=="") {
         result = containerRoot.innerHTML += `
         <div>
         <div class="card">
@@ -29,13 +15,11 @@ const showData = (data) =>{
         <img src=${element.characterImageThumb}>
         </div>
         <h2>${element.characterName}<br></h2>        
-      </div>
-    </div>`
-}
-    );
-
-
-return result;
-
-}
-window.onload = showData(data)
+        </div>
+        </div>
+        </div>`
+      }
+    });
+    return result;
+  }
+  window.onload = showData(data);

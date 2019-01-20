@@ -5,7 +5,7 @@
 			//listaEpisodios.each(function(){
 			//	$("#type").append("<option value='x'>Valor</option>");
 			//});
-		//})*/
+			//})*/
 
 //llamar a episodes.js
 
@@ -15,3 +15,7 @@
 				$("#type").append("<option value='x'>Temporada seasonsNum - Caṕitulo episodeNum</option>");
 			});
 		}*/
+
+		window.GOTData = {
+
+}
