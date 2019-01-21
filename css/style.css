@@ -35,6 +35,14 @@ nav .nav-wrapper {
     display: block;
 }
 
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
 .card-episode {
     width: 550px;
     height: 200px;
