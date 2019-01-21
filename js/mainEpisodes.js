@@ -21,7 +21,7 @@ filterTemps.addEventListener("change", () => {
 })
 
 //Función para ver la data
-function episod(dataEpisodes){
+function episod(Data2){
   //Limpiando el div
   containerRoot2.innerHTML ="";
   dataEpisodes.forEach(element => {
