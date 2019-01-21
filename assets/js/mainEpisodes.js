@@ -1,26 +1,37 @@
   //DOM
-const dataEpisodes = (EPISODES.episodes);
-const containerRoot2 = document.getElementById("root2");
-
+  const dataEpisodes = (EPISODES.episodes);
+  const containerRoot2 = document.getElementById("root2");
+  const filterTemps = document.getElementById("season")
   const showData2 = (dataEpisodes) =>{
     let result2 = "";
-
-    data.forEach(element => {
-      if (element.seasonNum !=="") {
-        result = containerRoot.innerHTML += `
-        <div>
-        <div class="card">
-        <div class="box">
-        <div class="img">
-        <h3>${element.episodeTitle}</h3>
-        <p>${element.episodeDescription}</p>
-        </div>
-        <h4>${element.seasonNum}<br></h4>        
-        </div>
-        </div>
-        </div>`
-      }
-    });
+    episod(dataEpisodes);
     return result2;
   }
-  window.onload = showData2(dataEpisodes);
+
+//Filtro
+filterTemps.addEventListener("change", () => {
+  let condition = filterTemps.value
+  let filtered = window.filterSeason (dataEpisodes, condition);
+
+  //limpiando el div
+  containerRoot2.innerHTML ="";
+  episod(filtered);
+})
+
+//Función para ver la data
+function episod(dataEpisodes){
+  //Limpiando el div
+  containerRoot2.innerHTML ="";
+  dataEpisodes.forEach(element => {
+    containerRoot2.innerHTML += `
+    <div class="card">
+    <div class="box">
+    <div class="href">
+    <a href="${element.episodeLink}"></div>
+    <h5>Episodio: ${element.episodeNum}<br><span>Temporada: ${element.seasonNum}</span></h5>
+    </div>
+    </div>`
+  });
+}
+
+window.onload = showData2(dataEpisodes);
