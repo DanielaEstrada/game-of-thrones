@@ -4,9 +4,9 @@ const filterSeason = (dataEpisodes, condition) => {
     if (condition == 0){
     	return dataEpisodes;
     }
-    const filteredSeason= dataEpisodes.filter(element => {
-        return element.seasonNum === condition
+    const filteredSeason = dataEpisodes.filter(element => {
+        return element.seasonNum == condition
     })
     return filteredSeason;
   };
-  window.filterSeason=filterSeason;
+  window.filterSeason =filterSeason;
