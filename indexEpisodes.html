@@ -16,105 +16,57 @@
 <body>
 	<header id="header">
 		<img src ="assets/img/GOT1.jpg" class="img-fluid" alt="GOT1">
-			<nav>
-				<div class="nav-wrapper">
-					<a href="#" class="brand-logo">GOT</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="/index.html">Personajes</a></li>
-						<li><a href="indexEpisodes.html">Capítulos</a></li>
-					</ul>
-				</div>
-			</nav>
-					<!--<h1 class="yellow-text text-darken-2">Conoce más de GOT</h1>
-				</div>
+		<nav>
+			<div class="nav-wrapper">
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html">Personajes</a></li>
+					<li><a href="indexEpisodes.html">Capítulos</a></li>
+				</ul>
 			</div>
-			<li class="item">
-				<a class="link" href="indexEpisodes.html" >Capítulos de GOT</a>
-			</li>-->
-			<!--Sección donde filtro por capítulos
-			<div class="row" id="group">
-				<div class="col s9 15 offset-s2 offset-l1">
-					<form name="formCharacter" class="input-field" autocomplete="off">
-
-						Select con opciones que se manejarán desde el DOM
-						<select id="houseName" class="select">
-							<option value="0" selected="selected">Seleccionar casa</option>
-							<option value="Greyjoy">Greyjoy</option>
-							<option value="Targaryen">Targaryen</option>
-							<option value="Lannister">Lannister</option>
-							<option value="Stark">Stark</option>
-							<option value="Tully">Tully</option>
-							<option value="Martell">Martell</option>
-							<option value="Mormont">Momont</option>
-							<option value="Baratheon">Baratheon</option>
-							<option value="Tyrell">Tyrell</option>
-							<option value="Frey">Frey</option>
-							<option value="Arryn">Arryn</option>
-							<option value="Bolton">Bolton</option>
-							<option value="Tarly">Tarly</option>
-
-						</select>
-					</form>
-
-					<button onclick="cargarListado();" value="Cargar Listado"></button>
-					<select id="chapterList" class="select">
-						<option value="0" selected="selected">Seleccionar capítulo</option>
-						<option value="One">Temporada 1 - </option>
-						<option value="Two">Temporada 2 - </option>
-						<option value="Tree">Temporada 3 - </option>
-						<option value="Four">Temporada 4 - </option>
-						<option value="Five">Temporada 5 - </option>
-						<option value="Six">Temporada 6 - </option>
-						<option value="Seven">Temporada 7 - </option>
-						<option value="Eigth">Temporada 8 - </option>
-
-					</select>
-				</form>
-			</div>
-		</div>-->
+		</nav>
 	</header>
 
-
-	<!--Contenedor con la info de la data-->
-	<article class="col s12 m4 l12">
-		<h3 class="animated bounceInRight">EPISODIOS</h3>
-		<section class="filtro">
-			<div class="input-field col s12 m6">
-				<select id="icons" class="episodeTitle">
-						<option value="" disable selected>Temporada...</option>
-						<option value="One">Temporada 1 - </option>
-						<option value="Two">Temporada 2 - </option>
-						<option value="Tree">Temporada 3 - </option>
-						<option value="Four">Temporada 4 - </option>
-						<option value="Five">Temporada 5 - </option>
-						<option value="Six">Temporada 6 - </option>
-						<option value="Seven">Temporada 7 - </option>
-						<option value="Eigth">Temporada 8 - </option>
-
-					</select>
-				</div>
-			</section>
-
-		<section id="root2" class="container-fluid"></section>
-	</article>
-	<!--<section id="root2" class="row"></section>-->
-
-
-	<footer>
-		<div class="container" style="width: 100%">
-			© 2019
-			<a class="grey-text text-lighten-4" href="http://viewers-guide.hbo.com/">Game of Thrones Viewer's Guide</a>
+	<!--Sección donde filtro por capítulos-->
+	<div class="row" id="group">
+		<div class="col s9 15 offset-s2 offset-l1">
+			<form name="formSeason" class="input-field" autocomplete="off">
+				<!--Select de los capítulos-->
+				<select id="season" class="select">
+					<option value="0" selected="selected">Temporada...</option>
+					<option value="One">Temporada 1 - </option>
+					<option value="Two">Temporada 2 - </option>
+					<option value="Tree">Temporada 3 - </option>
+					<option value="Four">Temporada 4 - </option>
+					<option value="Five">Temporada 5 - </option>
+					<option value="Six">Temporada 6 - </option>
+					<option value="Seven">Temporada 7 - </option>
+					<option value="Eigth">Temporada 8 - </option>
+				</select>
+			</form>
 		</div>
-	</footer>
+	</div>
+
+		<!--Contenedor con la info de la data-->
+		<article class="col s12 m4 l12">
+			<h4 class="animated bounceInRight">CAPÍTULOS</h4>
+			<section id="root2" class="container-fluid"></section>
+		</article>
 
 
-	<!-- enlaces de scripts-->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>				
-	<script src="./assets/data/data.js"></script>
-	<script src="./assets/data/episodes.js"></script>
-	<script src="./assets/js/app.js"></script>
-	<script src="./assets/js/mainEpisodes.js"></script>
+		<footer>
+			<div class="container" style="width: 100%">
+				© 2019
+				<a class="grey-text text-lighten-4" href="http://viewers-guide.hbo.com/">Game of Thrones Viewer's Guide</a>
+			</div>
+		</footer>
 
 
-</body>
-</html>
+		<!-- enlaces de scripts-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>				
+		<script src="./assets/data/episodes.js"></script>
+		<script src="./assets/js/appEpisodes.js"></script>
+		<script src="./assets/js/mainEpisodes.js"></script>
+
+
+	</body>
+	</html>
