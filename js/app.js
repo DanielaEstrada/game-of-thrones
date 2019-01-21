@@ -1,21 +1,12 @@
-//<script type="text/javascript">
-/*$(function(){
-			//console.log("cargando el listado de episodios");
-			//var listaEpisodios = [];
-			//listaEpisodios.each(function(){
-			//	$("#type").append("<option value='x'>Valor</option>");
-			//});
-			//})*/
-
-//llamar a episodes.js
-
-		/*function cargarListado() {
-			var listaEpisodios = [];
-			listaEpisodios.each(function(){
-				$("#type").append("<option value='x'>Temporada seasonsNum - Caṕitulo episodeNum</option>");
-			});
-		}*/
-
-		window.GOTData = {
-
-}
+//Función para filtrar
+const filterSeason = (dataEpisodes, condition) => {
+    
+    if (condition == 0){
+    	return dataEpisodes;
+    }
+    const filteredSeason= dataEpisodes.filter(element => {
+        return element.seasonNum === condition
+    })
+    return filteredSeason;
+  };
+  window.filterSeason=filterSeason;
