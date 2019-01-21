@@ -2,9 +2,13 @@
 const data = (DATA.characters);
 const containerRoot = document.getElementById("root");
 
+  //Mostrando data
   const showData = (data) =>{
     let result = "";
 
+    //Función para ver data
+    //Limpiando el div
+    containerRoot.innerHTML = "";
     data.forEach(element => {
       if (element.characterName !=="") {
         result = containerRoot.innerHTML += `
