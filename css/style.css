@@ -23,6 +23,17 @@ nav .nav-wrapper {
     display: flex;
 }
 
+#group{
+    margin-top: 10%;
+    background: #5A5A5A;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.select{
+    display: block;
+}
+
 .card {
     width: 200px;
     height: 200px;
